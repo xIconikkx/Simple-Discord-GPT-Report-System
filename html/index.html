@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Report System</title>
+</head>
+<body>
+    <div id="report-ui" class="hidden">
+        <div class="close-button" id="closeReport">×</div> <!-- Close button as "X" -->
+        <h2>Submit a Report</h2>
+        <label for="reportType">Report Type:</label>
+        <select id="reportType">
+            <option value="Feedback">Feedback</option>
+            <option value="Bug">Bug</option>
+            <option value="Report">Report</option>
+        </select>
+        
+        <label for="playerName">Player Name:</label>
+        <input type="text" id="playerName" placeholder="Enter the player's name...">
+        
+        <label for="reason">Reason:</label>
+        <input type="text" id="reason" placeholder="Enter the reason...">
+        
+        <label for="reportContent">Description:</label>
+        <textarea id="reportContent" placeholder="Enter your report description..."></textarea>
+        
+        <button id="submitReport">Submit</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

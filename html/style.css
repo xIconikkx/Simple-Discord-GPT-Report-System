@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; /* Remove default body margin */
+    overflow: hidden; /* Prevent scrollbars from appearing */
+}
+
+#report-ui {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px; /* Set a fixed width for the UI */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for better appearance */
+    position: relative; /* Position relative to place the close button */
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 24px; /* Adjust size of the "X" */
+    cursor: pointer; /* Change cursor to pointer for better UX */
+    user-select: none; /* Prevent selection of the text */
+}
+
+.close-button:hover {
+    color: #ff4d4d; /* Change color on hover for better feedback */
+}
+
+.hidden {
+    display: none; /* This will hide the UI when the class is applied */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+label {
+    margin: 10px 0 5px;
+    display: block;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background: #444;
+    color: white;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+textarea {
+    height: 100px;
+    resize: none; /* Prevent resizing */
+}
+
+button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Make button occupy full width */
+}
+
+button:hover {
+    background-color: #666;
+}
